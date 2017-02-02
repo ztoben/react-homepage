@@ -1,0 +1,21 @@
+.navbar {
+  border-radius: 0px;
+  margin: 0;
+}
+
+.banner-large { 
+	color: #6F8AB7; 
+	font-family: 'Poppins', sans-serif;
+	font-size: 75px; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	padding: 0 15px;
+}
+
+.navbar-inverse {
+	border-bottom: 5px solid #A2D7FF;
+}
+
+.navbar-collapse {
+	padding: 0;
+}
