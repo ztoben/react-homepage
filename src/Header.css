@@ -19,3 +19,9 @@
 .navbar-collapse {
 	padding: 0;
 }
+
+@media (max-width: 768px) {
+  .banner-large {
+	  margin-left: 40px;
+  }
+}
