@@ -1,6 +1,28 @@
 .about {
-  text-align: center;
   background-color: #E8EEF2;
-  height: 150px;
+  min-height: 340px;
   padding: 20px;
+}
+
+.aboutInfo {
+  text-align: left;
+  padding: 20px;
+}
+
+.aboutImage {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .aboutInfo {
+    text-align: center;
+  }
+
+  .aboutImage {
+    padding: 20px 0 20px 0;
+  }
+
+  .about {
+    padding: 0px;
+  }
 }
