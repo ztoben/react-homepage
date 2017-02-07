@@ -2,17 +2,12 @@
   position: fixed;
   width: 30px;
   height: 30px;
-  left: 20px;
-  top: 42px;
+  left: 10px;
+  top: 36px;
 }
  
 .bm-burger-bars {
   background: #373a47;
-}
- 
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
 }
  
 .bm-cross {
@@ -21,8 +16,8 @@
  
 .bm-menu {
   background: #373a47;
-  font-size: 1.15em;
-  padding-top: 35px;
+  font-size: 2em;
+  padding-top: 45px;
 }
  
 .bm-morph-shape {
@@ -32,12 +27,17 @@
 .bm-item-list {
   color: #b8b7ad;
 }
+
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
 
 .menu-item {
-    padding: 10px;
+    padding: 20px 0px 20px 25px;
+    text-align: left;
+}
+
+.menu-item a {
     text-decoration: none;
 }
 

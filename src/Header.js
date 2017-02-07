@@ -1,27 +1,41 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import '../font-awesome/css/font-awesome.min.css'
-import './Header.css';
+import Media from 'react-media';
+import './style/Header.css';
+
+
 
 class Header extends Component {
+	pullRight = () => {
+		return (
+			<Media query={{ maxWidth: 1000 }}>
+				{matches => matches ? (
+					<Nav>
+						<NavItem href="#About">About</NavItem>
+						<NavItem href="#Resume">Resume</NavItem>
+						<NavItem href="#Projects">Projects</NavItem>
+						<NavItem href="#Contact">Contact</NavItem>
+					</Nav>
+				) : (
+					<Nav pullRight>
+						<NavItem href="#About">About</NavItem>
+						<NavItem href="#Resume">Resume</NavItem>
+						<NavItem href="#Projects">Projects</NavItem>
+						<NavItem href="#Contact">Contact</NavItem>
+					</Nav>
+				)}
+			</Media>
+		)
+	}
 	render() {
 		return (
 			<Navbar name="Portfolio" inverse collapseOnSelect>
-				<h1 className="banner-large">Zach Toben</h1>
+				<p className="banner-large">Zach Toben</p>
 				<Navbar.Collapse>
-					<Nav>
-						<NavItem href="#Portfolio">Portfolio</NavItem>
-						<NavItem href="#About">About</NavItem>
-						<NavItem href="#Resume">Resume</NavItem>
-						<NavItem href="#Contact">Contact</NavItem>
-					</Nav>
-					<Nav pullRight>
-						<NavItem href="https://twitter.com/ztoben"><i className="fa fa-twitter-square fa-lg" aria-hidden="true"></i></NavItem>
-						<NavItem href="https://www.linkedin.com/in/zachary-toben-bbab4a84"><i className="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></NavItem>
-						<NavItem href="https://github.com/ztoben"><i className="fa fa-github-square fa-lg" aria-hidden="true"></i></NavItem>
-					</Nav>
+					{this.pullRight()}
 				</Navbar.Collapse>
 			</Navbar>
+
 		);
 	}
 }

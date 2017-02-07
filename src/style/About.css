@@ -19,10 +19,16 @@
   }
 
   .aboutImage {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
   }
 
   .about {
     padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-circle {
+    padding: 0 30px;
   }
 }

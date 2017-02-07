@@ -4,7 +4,7 @@ import About from './About';
 import Header from './Header';
 import Footer from './Footer';
 import SlideNav from './SlideNav';
-import './index.css';
+import './style/index.css';
 
 ReactDOM.render(
 	<SlideNav />,

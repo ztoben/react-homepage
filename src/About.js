@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import aboutImage from '../public/img/about.jpg'
-import './About.css';
+import './style/About.css';
 
 class About extends Component {
 	render() {
