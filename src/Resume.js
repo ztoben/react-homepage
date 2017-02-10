@@ -1,0 +1,39 @@
+import React, { Component } from 'react';
+import {Button} from 'react-bootstrap';
+import './style/Resume.css';
+
+class Resume extends Component {
+    render() {
+        return (
+            <div className="resume" name="Resume">
+                <h1>Resume</h1>
+
+                <hr />
+
+                <h4>Work Experience</h4>
+                <p><b>Product Engineer II (January 2017 - Present)</b></p>
+                <p>John Deere, Urbandale, Iowa</p>
+
+                <p><b>Contract Software Developer (July 2016 - Present)</b></p>
+                <p>Heartland AEA, Johnston, Iowa</p>
+
+                <p><b>It Analyst III (November 2015 - December 2016)</b></p>
+                <p>John Deere, Urbandale, Iowa</p>
+
+                <p><b>Computer Software Engineer (July 2014 - October 2015)</b></p>
+                <p>Heartland AEA, Johnston, Iowa</p>
+
+                <hr />
+
+                <h4>Education</h4>
+                <p><b>University of Northern Iowa (2014)</b></p>
+                <p>Bachelor of Arts (BA), Computer Science</p>
+
+                <hr />
+                <Button bsSize="large" block>Full Resume</Button>
+            </div>
+        );
+    }
+}
+
+export default Resume;

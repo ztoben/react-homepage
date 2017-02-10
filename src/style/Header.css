@@ -17,6 +17,14 @@
 	border-bottom: 5px solid #A2D7FF;
 }
 
+.banner-large {
+	float: left;
+}
+
+.nav {
+	margin-top: 30px;
+}
+
 .navbar-collapse {
 	padding: 0;
 }
@@ -27,12 +35,8 @@
   }
 }
 
-@media (min-width: 1000px) {
-  .banner-large {
-	  float: left;
-  }
-
-	.nav {
-		margin-top: 30px;
+@media (max-width: 991px) {
+  .nav {
+		margin-top: 0px;
 	}
 }

@@ -1,43 +1,38 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import Media from 'react-media';
 import './style/Header.css';
 
-
-
 class Header extends Component {
-	pullRight = () => {
-		return (
-			<Media query={{ maxWidth: 1000 }}>
-				{matches => matches ? (
-					<Nav>
-						<NavItem href="#About">About</NavItem>
-						<NavItem href="#Resume">Resume</NavItem>
-						<NavItem href="#Projects">Projects</NavItem>
-						<NavItem href="#Contact">Contact</NavItem>
-					</Nav>
-				) : (
-					<Nav pullRight>
-						<NavItem href="#About">About</NavItem>
-						<NavItem href="#Resume">Resume</NavItem>
-						<NavItem href="#Projects">Projects</NavItem>
-						<NavItem href="#Contact">Contact</NavItem>
-					</Nav>
-				)}
-			</Media>
-		)
+	buildNavItems = (items) => {
+		return items.map((item, i) => {
+			return (
+				<NavItem href={"#" + item} key={"navItem_" + i}>
+					{item}
+				</NavItem>
+			);
+		});
 	}
 	render() {
 		return (
 			<Navbar name="Portfolio" inverse collapseOnSelect>
 				<p className="banner-large">Zach Toben</p>
 				<Navbar.Collapse>
-					{this.pullRight()}
+					<Nav>
+						{this.buildNavItems(this.props.items)}
+					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
 
 		);
 	}
+}
+
+Header.propTypes = {
+	items: React.PropTypes.array
+}
+
+Header.DefaultProps = {
+	items: []
 }
 
 export default Header;

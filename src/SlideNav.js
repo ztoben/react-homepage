@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-var Menu = require('react-burger-menu').slide;
+import Menu from 'react-burger-menu';
 import './style/SlideNav.css';
 
 class SlideNav extends Component {
     constructor(props) {
         super(props);
-        this.state = {show: false};
+        this.state = { show: false };
     }
     handleClick = () => {
-        this.setState({'show': false});
+        this.setState({ 'show': false });
+    }
+    getSlideItem = (item, i) => {
+        return (
+            <a
+                onClick={this.handleClick}
+                key={"slideNav_" + i}
+                id={"nav-" + item}
+                className="menu-item"
+                href={"#" + item}>{item}
+            </a>
+        );
     }
     render() {
         return (
-            <Menu isOpen={this.state.show}>
-                <a onClick={this.handleClick} id="nav-about" className="menu-item" href="#About">About</a>
-                <a onClick={this.handleClick} id="nav-contact" className="menu-item" href="#Resume">Resume</a>
-                <a onClick={this.handleClick} id="nav-projects" className="menu-item" href="#Projects">Projects</a>
-                <a onClick={this.handleClick} id="nav-contact" className="menu-item" href="#Contact">Contact</a>
-            </Menu>
+            <Menu.slide isOpen={this.state.show}>
+                {this.props.items.map((item, i) => {
+                    return this.getSlideItem(item, i);
+                })}
+            </Menu.slide>
         );
     }
 };
+
+SlideNav.propTypes = {
+    items: React.PropTypes.array
+}
+
+SlideNav.defaultProps = {
+    items: []
+}
 
 export default SlideNav;

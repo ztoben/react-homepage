@@ -1,27 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import About from './About';
+import Resume from './Resume';
+import Projects from './Projects';
+import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
 import SlideNav from './SlideNav';
 import './style/index.css';
 
-ReactDOM.render(
-	<SlideNav />,
-	document.getElementById('slideNav')
-);
+const navItems = ['About', 'Contact', 'Projects', 'Contact'];
 
 ReactDOM.render(
-	<Header />,
-	document.getElementById('header')
-);
-
-ReactDOM.render(
-	<About />,
-	document.getElementById('about')
-);
-
-ReactDOM.render(
-	<Footer />,
-	document.getElementById('footer')
-);
+	<div>
+		<SlideNav items={navItems}/>
+		<Header items={navItems}/>
+		<About />
+		<Resume />
+		<Projects />
+		<Contact />
+		<Footer />
+	</div>,
+	document.getElementById('app')
+)
