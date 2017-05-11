@@ -1,0 +1,11 @@
+.navBox {
+    clear: both;
+    cursor: pointer;
+    background-color: darkgray;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.centered {
+    text-align: center;
+}

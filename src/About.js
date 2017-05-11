@@ -9,7 +9,7 @@ const AboutImage = () => {
 			className="img-circle"
 			alt="About"
 			width="300"
-			/>
+		/>
 	);
 };
 
