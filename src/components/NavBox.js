@@ -5,10 +5,15 @@ class NavBox extends Component {
     buildNavBoxItems = (links) => {
         return links.map((item, i) => {
             return (
-                <div key={"navBoxItem_" + i} className="navBox col-sm-3 centered">
-                    <i className={item.icon} aria-hidden="true"></i>
-                    <h4>{item.text}</h4>
-                </div>
+                <span key={"navBoxItem_" + i} className="navBox-container col-md-3 col-sm-6 col-xs-12 centered">
+                    <div className="navBox">
+                        <a href={item.link}>
+                            <span className="link-spanner"></span>
+                        </a>
+                        <i className={item.icon} aria-hidden="true"></i>
+                        <h4>{item.text}</h4>
+                    </div>
+                </span>
             );
         });
     }

@@ -17,6 +17,10 @@
   	text-align: center;
 }
 
+.aboutInfo p {
+	margin: 10px;
+}
+
 @media (max-width: 768px) {
 	.aboutInfo {
 		padding: 10px 50px;

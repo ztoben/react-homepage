@@ -1,11 +1,24 @@
+.navBox-container {
+    display: inline-block;
+}
+
 .navBox {
-    clear: both;
-    cursor: pointer;
     background-color: darkgray;
-    padding: 25px;
     border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 25px;
 }
 
 .centered {
     text-align: center;
+}
+
+.link-spanner{
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
 }
