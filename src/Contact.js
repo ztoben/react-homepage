@@ -34,10 +34,4 @@ class Contact extends Component {
     }
 }
 
-// links: React.PropTypes.arrayOf(React.PropTypes.shape({
-//         link: React.PropTypes.string,
-//         header: React.PropType.string,
-//         text: React.PropType.string
-//     }))
-
 export default Contact;

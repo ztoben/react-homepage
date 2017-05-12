@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../style/NavBox.css';
 
 class NavBox extends Component {
@@ -28,10 +29,10 @@ class NavBox extends Component {
 }
 
 NavBox.propTypes = {
-    links: React.PropTypes.arrayOf(React.PropTypes.shape({
-        link: React.PropTypes.string,
-        text: React.PropTypes.string,
-        icon: React.PropTypes.string
+    links: PropTypes.arrayOf(PropTypes.shape({
+        link: PropTypes.string,
+        text: PropTypes.string,
+        icon: PropTypes.string
     }))
 }
 

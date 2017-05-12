@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import './style/Header.css';
 
@@ -28,7 +29,7 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-	items: React.PropTypes.array
+	items: PropTypes.array
 }
 
 Header.DefaultProps = {

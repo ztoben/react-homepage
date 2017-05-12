@@ -3,10 +3,25 @@
     padding: 10px 50px;
 }
 
-.resume h4 {
-    border-bottom: solid 2px darkgray;
+.resume-col hr {
+    border-color: darkgrey;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.resume button {
-    margin-top: 10px;
+.resume-col p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.resume div {
+    padding: 0;
+}
+
+.resume h4 {
+    text-align: center;
+}
+
+.resume-dl {
+    padding-top: 20px;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Menu from 'react-burger-menu';
 import './style/SlideNav.css';
 
@@ -33,7 +34,7 @@ class SlideNav extends Component {
 };
 
 SlideNav.propTypes = {
-    items: React.PropTypes.array
+    items: PropTypes.array
 }
 
 SlideNav.defaultProps = {

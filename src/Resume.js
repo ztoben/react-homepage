@@ -8,8 +8,9 @@ class Resume extends Component {
             <div className="resume">
                 <h1>Resume</h1>
                 <hr />
-                <div className="col-md-6 col-xs-12">
+                <div className="col-md-6 col-xs-12 resume-col">
                     <h4>Work Experience</h4>
+                    <hr/>
                     <p><b>Product Engineer II (January 2017 - Present)</b></p>
                     <p>John Deere, Urbandale, Iowa</p>
 
@@ -22,13 +23,13 @@ class Resume extends Component {
                     <p><b>Computer Software Engineer (July 2014 - October 2015)</b></p>
                     <p>Heartland AEA, Johnston, Iowa</p>
                 </div>
-                <div className="col-md-6 col-xs-12">
+                <div className="col-md-6 col-xs-12 resume-col">
                     <h4>Education</h4>
+                    <hr/>
                     <p><b>University of Northern Iowa (2014)</b></p>
                     <p>Bachelor of Arts (BA), Computer Science</p>
                 </div>
-                <hr />
-                <div className="col-md-12">
+                <div className="col-md-12 resume-dl">
                     <Button bsSize="large" block>Full Resume</Button>
                 </div>
             </div>

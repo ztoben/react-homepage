@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "prop-types": "^15.5.9",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-burger-menu": "^1.10.10",
