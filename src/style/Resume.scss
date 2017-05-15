@@ -1,25 +1,25 @@
 .resume {
     overflow: auto;
     padding: 10px 50px;
-}
 
-.resume-col hr {
-    border-color: darkgrey;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+    hr {
+        border-color: darkgrey;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
-.resume div {
-    padding: 0;
-}
+    div {
+        padding: 0;
+    }
 
-.resume h4 {
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
+    h4 {
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
 
-.resume-dl {
-    padding-top: 20px;
+    .resume-dl {
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 550px) {

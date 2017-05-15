@@ -8,9 +8,11 @@ class SlideNav extends Component {
         super(props);
         this.state = { show: false };
     }
+    
     handleClick = () => {
         this.setState({ 'show': false });
     }
+
     getSlideItem = (item, i) => {
         return (
             <a
@@ -22,6 +24,7 @@ class SlideNav extends Component {
             </a>
         );
     }
+
     render() {
         return (
             <Menu.slide isOpen={this.state.show}>
