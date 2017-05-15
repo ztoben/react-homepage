@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Menu from 'react-burger-menu';
-import './style/SlideNav.css';
+import './css/SlideNav.css';
 
 class SlideNav extends Component {
     constructor(props) {

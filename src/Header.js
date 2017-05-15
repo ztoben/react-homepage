@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import './style/Header.css';
+import './css/Header.css';
 
 class Header extends Component {
 	buildNavItems = (items) => {

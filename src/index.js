@@ -7,7 +7,7 @@ import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
 import SlideNav from './SlideNav';
-import './style/index.css';
+import './css/index.css';
 
 const navItems = ['About', 'Contact', 'Projects', 'Contact'];
 

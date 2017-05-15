@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../style/NavBox.css';
+import '../css/NavBox.css';
 
 class NavBox extends Component {
     buildNavBoxItems = (links) => {
