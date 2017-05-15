@@ -27,7 +27,7 @@ class About extends Component {
 						width='300'
 					/>
 				</div>
-				<div className='aboutInfo col-sm-5'>
+				<div className='aboutInfo col-sm-6'>
 					<h1>Hello!</h1>
 					<p>My name is Zachary Toben, I'm a full stack web developer currently living in Des Moines, Iowa.</p>
 					<p>I love to develop and have been fascinated with computers and electronics from a young age. I'm always looking for a challenge or something new.</p>

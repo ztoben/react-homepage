@@ -6,11 +6,12 @@
 
 .aboutInfo {
   	text-align: left;
-  	padding: 20px;
+	padding: 20px;
 }
 
 .aboutInfo h1 {
-	margin-top: 0px;
+	margin: 0 0 5px;
+	text-decoration: underline;
 }
 
 .aboutImage {
@@ -29,6 +30,10 @@
 	padding: 5px;
 }
 
+.img-circle {
+	border: 5px solid white;
+}
+
 @media (max-width: 768px) {
 	.aboutInfo {
 		padding: 10px 50px;
@@ -45,6 +50,6 @@
 
 @media (max-width: 400px) {
 	.img-circle {
-		padding: 0 50px;
+		width: 250px;
 	}
 }

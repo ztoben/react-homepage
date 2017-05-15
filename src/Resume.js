@@ -10,7 +10,6 @@ class Resume extends Component {
                 <hr />
                 <div className="col-md-6 col-xs-12 resume-col">
                     <h4>Work Experience</h4>
-                    <hr/>
                     <p><b>Product Engineer II (January 2017 - Present)</b></p>
                     <p>John Deere, Urbandale, Iowa</p>
 
@@ -25,7 +24,6 @@ class Resume extends Component {
                 </div>
                 <div className="col-md-6 col-xs-12 resume-col">
                     <h4>Education</h4>
-                    <hr/>
                     <p><b>University of Northern Iowa (2014)</b></p>
                     <p>Bachelor of Arts (BA), Computer Science</p>
                 </div>

@@ -9,19 +9,21 @@
     margin-right: 5px;
 }
 
-.resume-col p {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .resume div {
     padding: 0;
 }
 
 .resume h4 {
-    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 .resume-dl {
     padding-top: 20px;
+}
+
+@media (max-width: 550px) {
+	.resume h4 {
+        text-align: center;
+    }
 }
