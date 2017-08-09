@@ -28,7 +28,9 @@ class Resume extends Component {
                     <p>Bachelor of Arts (BA), Computer Science</p>
                 </div>
                 <div className="col-md-12 resume-dl">
-                    <Button bsSize="large" block>Full Resume</Button>
+                    <form method="get" action={process.env.PUBLIC_URL + '/resume.doc'}>
+                        <Button bsSize="large" type="submit" block>Full Resume</Button>
+                    </form>
                 </div>
             </div>
         );
