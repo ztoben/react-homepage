@@ -32,7 +32,7 @@ class About extends Component {
 					<p>My name is Zachary Toben, I'm a full stack web developer currently living in Des Moines, Iowa.</p>
 					<p>I love to develop and have been fascinated with computers and electronics from a young age. I'm always looking for a challenge or something new.</p>
 					<p>My current interests in software development are:</p>
-					{BuildTags(['JavaScript', 'Node', 'React', 'C#', '.Net', 'AWS', 'Docker'])}
+					{BuildTags(['JavaScript', 'AWS', 'Node', 'React', 'C#', '.Net', 'AWS', 'Docker'])}
 				</div>
 			</div>
 		);
