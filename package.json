@@ -21,7 +21,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy-surge": "npm run build && surge --domain ztoben.surge.sh",
-    "deploy-s3": "npm run build && aws s3 sync build/ s3://ztoben",
+    "deploy-s3": "npm run build && aws s3 sync build/ s3://ztoben.com",
     "build-css": "node-sass-chokidar src/style/ -o src/css/",
     "watch-css": "npm run build-css && node-sass-chokidar src/style/ -o src/css/ --watch --recursive"
   },
