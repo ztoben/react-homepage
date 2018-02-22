@@ -26,7 +26,7 @@ class Contact extends Component {
         }];
 
         return (
-            <div className="contact">
+            <div className="contact" id="Contact">
                 <h1>Contact</h1>
                 <NavBox links={navBoxLinks} />
             </div>
