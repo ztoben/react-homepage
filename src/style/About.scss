@@ -1,25 +1,23 @@
 .about {
 	background-color: #E8EEF2;
+	border-bottom: 5px solid lightgray;
   	overflow: auto;
   	padding: 20px;
 	width: 100%;
 }
 
+.aboutContainer {
+	display: flex;
+}
+
 .aboutInfo {
-  	text-align: left;
-	float: right;
 	padding: 20px;
-	width: 66%;
+  	text-align: left;
 }
 
 .aboutInfo h1 {
 	margin: 0 0 5px;
 	text-decoration: underline;
-}
-
-.aboutImage {
-	text-align: center;
-	display: inline-block;
 }
 
 .aboutInfo p {

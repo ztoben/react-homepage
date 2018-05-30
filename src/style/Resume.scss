@@ -1,6 +1,7 @@
 .resume {
+    display: flex;
     overflow: auto;
-    padding: 10px 50px;
+    padding: 50px 50px 20px;
 
     hr {
         border-color: darkgrey;
@@ -16,10 +17,20 @@
         text-decoration: underline;
         margin-bottom: 20px;
     }
+}
 
-    .resume-dl {
-        padding-top: 20px;
-    }
+.resume-dl {
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.resume-button {
+    background-color: darkgray;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
 }
 
 @media (max-width: 550px) {

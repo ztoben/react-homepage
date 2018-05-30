@@ -27,6 +27,10 @@ module.exports = {
                 ]
             },
             {
+                test: /\.pdf$/,
+                use: 'file-loader?name=[path][name].[ext]'
+            },
+            {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 use: 'url-loader?limit=10000',
             },
@@ -48,7 +52,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
+        compress: true,
         contentBase: './dist',
-        hot: true
+        hot: true,
+        open: true,
+        port: 9999
     }
 };

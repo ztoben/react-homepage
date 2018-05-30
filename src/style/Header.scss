@@ -11,34 +11,17 @@
 	text-transform: uppercase; 
 	padding: 0 15px;
 	margin: 0;
-}
-
-.navbar-inverse {
-	border-bottom: 5px solid #A2D7FF;
-	border-left: 0px;
-	border-right: 0px;
-}
-
-.banner-large {
 	float: left;
 }
 
-.nav {
-	margin-top: 30px;
-}
-
-.navbar-collapse {
-	padding: 0;
+.header {
+	border-bottom: 5px solid #A2D7FF;
+	padding: 20px;
+	height: 150px;
 }
 
 @media (max-width: 768px) {
   .banner-large {
 	  margin-left: 20px;
   }
-}
-
-@media (max-width: 991px) {
-  .nav {
-		margin-top: 0px;
-	}
 }
