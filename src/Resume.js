@@ -10,7 +10,10 @@ class Resume extends Component {
                 <hr />
                 <div className="col-lg-4 col-xs-12 resume-col">
                     <h4>Work Experience</h4>
-                    <p><b>Contract Software Developer (September 2017 - Present)</b></p>
+                    <p><b>Software Engineer (April 2018 - Present)</b></p>
+                    <p>Gain Complaince, Des Moines, Iowa</p>
+
+                    <p><b>Contract Software Developer (September 2017 - March 2018)</b></p>
                     <p>Pioneer, Johnston, Iowa</p>
 
                     <p><b>Product Engineer II (January 2017 - October 2017)</b></p>

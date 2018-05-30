@@ -7,7 +7,9 @@
 
 .aboutInfo {
   	text-align: left;
+	float: right;
 	padding: 20px;
+	width: 66%;
 }
 
 .aboutInfo h1 {
@@ -16,7 +18,8 @@
 }
 
 .aboutImage {
-  	text-align: center;
+	text-align: center;
+	display: inline-block;
 }
 
 .aboutInfo p {
@@ -33,6 +36,7 @@
 
 .img-circle {
 	border: 5px solid white;
+	border-radius: 50%;
 }
 
 @media (max-width: 768px) {
