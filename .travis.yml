@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+cache:
+  directories:
+  - node_modules
+
+script:
+  - npm install
+  - npm run build
+
+deploy:
+  email: "zach.toben@gmail.com"
+  name: "Zach Toben"
+  local-dir: dist
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
