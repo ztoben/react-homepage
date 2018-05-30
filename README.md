@@ -1,1 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+### Zach's homepage
+
+My homepage and place to experiment with React and other web technologies.
+
+#####Technologies used:
+* React
+* Webpack
+* Babel
