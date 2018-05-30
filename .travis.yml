@@ -3,8 +3,14 @@ language: node_js
 node_js:
   - "stable"
 
-script:
+cache:
+  directories:
+  - "$HOME/.npm"
+
+install:
   - npm ci
+
+script:
   - npm run build
 
 deploy:
