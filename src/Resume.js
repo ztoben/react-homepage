@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import './css/Resume.css';
+import './style/Resume.scss';
 
 class Resume extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Menu from 'react-burger-menu';
-import './css/SlideNav.css';
+import './style/SlideNav.scss';
 
 class SlideNav extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class SlideNav extends Component {
     
     handleClick = () => {
         this.setState({ 'show': false });
-    }
+    };
 
     getSlideItem = (item, i) => {
         return (
@@ -23,7 +23,7 @@ class SlideNav extends Component {
                 href={"#" + item}>{item}
             </a>
         );
-    }
+    };
 
     render() {
         return (
@@ -34,14 +34,14 @@ class SlideNav extends Component {
             </Menu.slide>
         );
     }
-};
+}
 
 SlideNav.propTypes = {
     items: PropTypes.array
-}
+};
 
 SlideNav.defaultProps = {
     items: []
-}
+};
 
 export default SlideNav;

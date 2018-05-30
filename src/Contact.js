@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBox from './components/NavBox';
-import './css/Contact.css';
+import './style/Contact.scss';
 
 class Contact extends Component {
     render() {

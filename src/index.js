@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
 import SlideNav from './SlideNav';
-import './css/index.css';
+import './style/index.scss';
 
 const navItems = ['About', 'Resume', 'Contact'];
 
@@ -20,4 +20,6 @@ ReactDOM.render(
 		<Footer />
 	</div>,
 	document.getElementById('app')
-)
+);
+
+module.hot.accept();

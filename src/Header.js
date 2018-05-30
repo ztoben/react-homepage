@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import './css/Header.css';
+import './style/Header.scss';
 
 class Header extends Component {
 	buildNavItems = (items) => {
@@ -12,7 +12,8 @@ class Header extends Component {
 				</NavItem>
 			);
 		});
-	}
+	};
+
 	render() {
 		return (
 			<Navbar name="Portfolio" inverse collapseOnSelect>
@@ -30,10 +31,10 @@ class Header extends Component {
 
 Header.propTypes = {
 	items: PropTypes.array
-}
+};
 
 Header.DefaultProps = {
 	items: []
-}
+};
 
 export default Header;

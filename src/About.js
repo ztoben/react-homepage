@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import aboutImage from '../public/img/about.jpg'
-import './css/About.css';
+import './style/About.scss';
 
 const BuildTags = (tags) => {
 	return tags.map(tag => {
@@ -13,7 +13,7 @@ const BuildTags = (tags) => {
 			</div>
 		);
 	});
-}
+};
 
 class About extends Component {
 	render() {
@@ -32,8 +32,9 @@ class About extends Component {
 						<h1>Hello!</h1>
 						<p>My name is Zachary Toben, I'm a full stack web developer currently living in Des Moines, Iowa.</p>
 						<p>I love to develop and have been fascinated with computers and electronics from a young age. I'm always looking for a challenge or something new.</p>
+						<p>I enjoy working on open source projects in my free time.</p>
 						<p>My current interests in software development are:</p>
-						{BuildTags(['JavaScript', 'AWS', 'Node', 'React', 'C#', '.Net', 'AWS'])}
+						{BuildTags(['JavaScript', 'React', 'AWS', 'Node', 'C#', '.Net'])}
 					</div>
 				</div>
 			</div>
