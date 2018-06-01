@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 function isDev(argv) {
@@ -70,12 +69,7 @@ module.exports = (env, argv) => {
             new webpack.HotModuleReplacementPlugin()
         ], ...isDev(argv) ? [
             new BundleAnalyzerPlugin()
-        ] : [
-            new CompressionPlugin({
-                deleteOriginalAssets: true,
-                cache: true
-            })
-        ]],
+        ] : []],
         devServer: {
             compress: true,
             contentBase: './dist',
