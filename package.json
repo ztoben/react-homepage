@@ -8,6 +8,7 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-2": "6.24.1",
+    "compression-webpack-plugin": "1.1.11",
     "css-loader": "0.28.11",
     "file-loader": "1.1.11",
     "node-sass": "4.9.0",
