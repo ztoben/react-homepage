@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import aboutImage from '../public/img/about.jpg'
+import aboutImage from '../public/about.jpg'
 import './style/About.scss';
 
 const BuildTags = (tags) => {
