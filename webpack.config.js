@@ -37,14 +37,6 @@ module.exports = (env, argv) => {
                 {
                     test: /\.pdf$/,
                     use: 'file-loader?name=[path][name].[ext]'
-                },
-                {
-                    test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                    use: 'url-loader?limit=10000',
-                },
-                {
-                    test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-                    use: 'file-loader',
                 }
             ]
         },
