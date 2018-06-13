@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const AssetsPlugin = require('assets-webpack-plugin');
 
 function isDev(argv) {
     return argv.mode === 'development';
@@ -59,7 +60,8 @@ module.exports = (env, argv) => {
             ]
         },
         plugins: [...[
-            new webpack.HotModuleReplacementPlugin()
+            new webpack.HotModuleReplacementPlugin(),
+            new AssetsPlugin({filename: 'assets.json'})
         ], ...isDev(argv) ? [
             new BundleAnalyzerPlugin()
         ] : [
