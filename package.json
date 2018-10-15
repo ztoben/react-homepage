@@ -12,7 +12,7 @@
     "compression-webpack-plugin": "2.0.0",
     "css-loader": "1.0.0",
     "file-loader": "2.0.0",
-    "node-sass": "4.9.3",
+    "node-sass": "4.9.4",
     "react-hot-loader": "4.3.11",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
