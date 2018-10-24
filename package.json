@@ -28,7 +28,7 @@
     "react": "16.5.2",
     "react-burger-menu": "2.5.4",
     "react-dom": "16.5.2",
-    "react-icons": "3.2.1",
+    "react-icons": "3.2.2",
     "react-media": "1.8.0"
   },
   "scripts": {
