@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "prop-types": "15.6.2",
-    "react": "16.6.0",
+    "react": "16.6.1",
     "react-burger-menu": "2.5.4",
     "react-dom": "16.6.0",
     "react-icons": "3.2.2",
