@@ -27,7 +27,7 @@
     "prop-types": "15.6.2",
     "react": "16.6.3",
     "react-burger-menu": "2.5.4",
-    "react-dom": "16.6.1",
+    "react-dom": "16.6.3",
     "react-icons": "3.2.2",
     "react-media": "1.8.0"
   },
