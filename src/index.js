@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import About from './About';
-import Resume from './Resume';
-import Contact from './Contact';
-import Header from './Header';
-import Footer from './Footer';
-import SlideNav from './SlideNav';
+import About from './components/About';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SlideNav from './components/SlideNav';
 import './style/index.scss';
 
 const navItems = ['About', 'Resume', 'Contact'];

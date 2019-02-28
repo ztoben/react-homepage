@@ -3,6 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const AssetsPlugin = require('assets-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function isDev(argv) {
     return argv.mode === 'development';
@@ -57,11 +58,40 @@ module.exports = (env, argv) => {
                     },
                     sourceMap: true
                 })
-            ]
+            ],
+            splitChunks: {
+                chunks: 'all',
+                minSize: 30000,
+                maxSize: 0,
+                minChunks: 1,
+                maxAsyncRequests: 5,
+                maxInitialRequests: 3,
+                automaticNameDelimiter: '~',
+                name: true,
+                cacheGroups: {
+                    vendors: {
+                        test: /[\\/]node_modules[\\/]/,
+                        priority: -10
+                    },
+                    default: {
+                        minChunks: 2,
+                        priority: -20,
+                        reuseExistingChunk: true
+                    }
+                }
+            }
         },
         plugins: [...[
             new webpack.HotModuleReplacementPlugin(),
-            new AssetsPlugin({filename: 'assets.json'})
+            new AssetsPlugin({
+                filename: 'assets.json',
+                integrity: true,
+                prettyPrint: true
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/index.html',
+                filename: 'index.html',
+            }),
         ], ...isDev(argv) ? [
             new BundleAnalyzerPlugin()
         ] : [

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Menu from 'react-burger-menu';
-import './style/SlideNav.scss';
+import '../style/SlideNav.scss';
 
 class SlideNav extends Component {
     constructor(props) {
         super(props);
         this.state = { show: false };
     }
-    
+
     handleClick = () => {
         this.setState({ 'show': false });
     };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import aboutImage from './images/about.jpg'
-import './style/About.scss';
+import aboutImage from '../images/about.jpg'
+import '../style/About.scss';
 
 const BuildTags = (tags) => {
 	return tags.map(tag => {

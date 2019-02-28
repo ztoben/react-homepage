@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import resume from '../public/resume.pdf'
-import './style/Resume.scss';
+import resume from '../../public/resume.pdf'
+import '../style/Resume.scss';
 
 class Resume extends Component {
     render() {
