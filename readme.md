@@ -2,10 +2,11 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/ztoben/react-homepage.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/ztoben/react-homepage.svg?branch=master)](https://travis-ci.org/ztoben/react-homepage)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97d1cece-6847-446d-a84f-1c8872d3c09d/deploy-status)](https://app.netlify.com/sites/ztoben-react-homepage/deploys)
 
-My homepage and place to experiment with React and other web technologies.
+_A page to experiment with React.js, webpack, and other web technologies_
 
-Found [here](https://ztoben.com).
+Live version found [here](https://ztoben-react-homepage.netlify.com/).
 
 ##### Technologies used:
 * React
