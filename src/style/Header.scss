@@ -3,25 +3,25 @@
   margin: 0;
 }
 
-.banner-large { 
-	color: #6F8AB7; 
-	font-family: 'Poppins', sans-serif;
-	font-size: 75px; 
-	font-weight: bold; 
-	text-transform: uppercase; 
-	padding: 0 15px;
-	margin: 0;
-	float: left;
+.banner-large {
+  color: #6f8ab7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 15px;
+  margin: 0;
+  float: left;
 }
 
 .header {
-	border-bottom: 5px solid #A2D7FF;
-	padding: 20px;
-	height: 150px;
+  border-bottom: 5px solid #a2d7ff;
+  padding: 20px;
+  height: 150px;
 }
 
 @media (max-width: 768px) {
   .banner-large {
-	  margin-left: 20px;
+    margin-left: 20px;
   }
 }

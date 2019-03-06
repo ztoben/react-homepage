@@ -1,24 +1,24 @@
 .navBox-container {
-    display: inline-block;
+  display: inline-block;
 
-    &.centered {
-        text-align: center;
-    }
-    
-    .navBox {
-        background-color: darkgray;
-        border-radius: 10px;
-        cursor: pointer;
-        margin: 5px;
-        padding: 25px;
+  &.centered {
+    text-align: center;
+  }
 
-        .link-spanner{
-            position:absolute; 
-            width:100%;
-            height:100%;
-            top:0;
-            left: 0;
-            z-index: 1;
-        }
+  .navBox {
+    background-color: darkgray;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 25px;
+
+    .link-spanner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
+  }
 }

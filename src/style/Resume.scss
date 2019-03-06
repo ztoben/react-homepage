@@ -1,40 +1,40 @@
 .resume {
-    display: flex;
-    overflow: auto;
-    padding: 50px 50px 20px;
+  display: flex;
+  overflow: auto;
+  padding: 50px 50px 20px;
 
-    hr {
-        border-color: darkgrey;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+  hr {
+    border-color: darkgrey;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-    div {
-        padding: 0;
-    }
+  div {
+    padding: 0;
+  }
 
-    h4 {
-        text-decoration: underline;
-        margin-bottom: 20px;
-    }
+  h4 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
 }
 
 .resume-dl {
-    padding: 0 0 20px;
-    text-align: center;
+  padding: 0 0 20px;
+  text-align: center;
 }
 
 .resume-button {
-    background-color: darkgray;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    width: 80%;
+  background-color: darkgray;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
 }
 
 @media (max-width: 550px) {
-	.resume h4 {
-        text-align: center;
-    }
+  .resume h4 {
+    text-align: center;
+  }
 }

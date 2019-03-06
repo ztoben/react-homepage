@@ -10,14 +10,14 @@ import './style/index.scss';
 const navItems = ['About', 'Resume', 'Contact'];
 
 ReactDOM.render(
-	<div>
-		<Header items={navItems}/>
-		<About />
-		<Resume />
-		<Contact />
-		<Footer />
-	</div>,
-	document.getElementById('app')
+  <div>
+    <Header items={navItems} />
+    <About />
+    <Resume />
+    <Contact />
+    <Footer />
+  </div>,
+  document.getElementById('app')
 );
 
 module.hot.accept();
