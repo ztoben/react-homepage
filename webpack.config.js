@@ -3,7 +3,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const AssetsPlugin = require('assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 function isDev(argv) {
@@ -26,7 +25,7 @@ module.exports = (env, argv) => {
         {
           test: /\.(scss|css)$/,
           use: [
-            MiniCssExtractPlugin.loader,
+            "style-loader",
             "css-loader",
             "sass-loader"
           ]
@@ -96,10 +95,6 @@ module.exports = (env, argv) => {
       new AssetsPlugin({
         filename: 'assets.json',
         prettyPrint: true
-      }),
-      new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css"
       }),
       new HtmlWebpackPlugin({
         template: './src/index.html',
