@@ -22,11 +22,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.(scss|css)$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader"
-          ]
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         },
         {
           test: /\.(png|svg|jpg|gif|ico)$/,
@@ -62,7 +58,7 @@ module.exports = (env, argv) => {
             keep_fnames: false,
           },
         }),
-        new OptimizeCSSAssetsPlugin({})
+        new OptimizeCSSAssetsPlugin({}),
       ],
       splitChunks: {
         chunks: 'all',
@@ -90,8 +86,8 @@ module.exports = (env, argv) => {
       ...[
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
-          filename: "[name].css",
-          chunkFilename: "[id].css"
+          filename: '[name].css',
+          chunkFilename: '[id].css',
         }),
         new HtmlWebpackPlugin({
           template: './src/index.html',
@@ -100,16 +96,16 @@ module.exports = (env, argv) => {
       ],
       ...(isDev(argv)
         ? [
-          // dev only plugins go here
-          new BundleAnalyzerPlugin(),
-          new AssetsPlugin({
-            filename: 'assets.json',
-            prettyPrint: true,
-          }),
-        ]
+            // dev only plugins go here
+            new BundleAnalyzerPlugin(),
+            new AssetsPlugin({
+              filename: 'assets.json',
+              prettyPrint: true,
+            }),
+          ]
         : [
-          // prod only plugins go here
-        ]),
+            // prod only plugins go here
+          ]),
     ],
     devServer: {
       compress: true,
