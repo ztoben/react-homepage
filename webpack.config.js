@@ -12,44 +12,35 @@ function isDev(argv) {
 
 module.exports = (env, argv) => {
   return {
-    entry: [
-      'react-hot-loader/patch',
-      './src/index.js'
-    ],
+    entry: ['react-hot-loader/patch', './src/index.js'],
     module: {
       rules: [
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: ['babel-loader']
+          use: ['babel-loader'],
         },
         {
           test: /\.(scss|css)$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader"
-          ]
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         },
         {
           test: /\.(png|svg|jpg|gif|ico)$/,
-          use: [
-            'file-loader'
-          ]
+          use: ['file-loader'],
         },
         {
           test: /\.pdf$/,
-          use: 'file-loader?name=[path][name].[ext]'
-        }
-      ]
+          use: 'file-loader?name=[path][name].[ext]',
+        },
+      ],
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx']
+      extensions: ['*', '.js', '.jsx'],
     },
     output: {
       path: __dirname + '/dist',
       publicPath: '/',
-      filename: 'bundle.js'
+      filename: 'bundle.js',
     },
     optimization: {
       minimizer: [
@@ -67,7 +58,7 @@ module.exports = (env, argv) => {
             keep_fnames: false,
           },
         }),
-        new OptimizeCSSAssetsPlugin({})
+        new OptimizeCSSAssetsPlugin({}),
       ],
       splitChunks: {
         chunks: 'all',
@@ -81,42 +72,47 @@ module.exports = (env, argv) => {
         cacheGroups: {
           vendors: {
             test: /[\\/]node_modules[\\/]/,
-            priority: -10
+            priority: -10,
           },
           default: {
             minChunks: 2,
             priority: -20,
-            reuseExistingChunk: true
-          }
-        }
-      }
+            reuseExistingChunk: true,
+          },
+        },
+      },
     },
-    plugins: [...[
-      new webpack.HotModuleReplacementPlugin(),
-      new AssetsPlugin({
-        filename: 'assets.json',
-        prettyPrint: true
-      }),
-      new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css"
-      }),
-      new HtmlWebpackPlugin({
-        template: './src/index.html',
-        filename: 'index.html',
-      }),
-    ], ...isDev(argv) ? [
-      // dev only plugins go here
-      new BundleAnalyzerPlugin()
-    ] : [
-      // prod only plugins go here
-    ]],
+    plugins: [
+      ...[
+        new webpack.HotModuleReplacementPlugin(),
+        new MiniCssExtractPlugin({
+          filename: '[name].css',
+          chunkFilename: '[id].css',
+        }),
+        new HtmlWebpackPlugin({
+          template: './src/index.html',
+          filename: 'index.html',
+        }),
+      ],
+      ...(isDev(argv)
+        ? [
+            // dev only plugins go here
+            new BundleAnalyzerPlugin(),
+            new AssetsPlugin({
+              filename: 'assets.json',
+              prettyPrint: true,
+            }),
+          ]
+        : [
+            // prod only plugins go here
+          ]),
+    ],
     devServer: {
       compress: true,
       contentBase: './dist',
       hot: true,
       open: true,
-      port: 9999
-    }
+      port: 9999,
+    },
   };
 };

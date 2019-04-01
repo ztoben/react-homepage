@@ -1,58 +1,58 @@
 .about {
-	background-color: #E8EEF2;
-	border-bottom: 5px solid lightgray;
-  	overflow: auto;
-  	padding: 20px;
-	width: 100%;
+  background-color: #e8eef2;
+  border-bottom: 5px solid lightgray;
+  overflow: auto;
+  padding: 20px;
+  width: 100%;
 }
 
 .aboutContainer {
-	display: flex;
+  display: flex;
 }
 
 .aboutInfo {
-	padding: 20px;
-  	text-align: left;
+  padding: 20px;
+  text-align: left;
 }
 
 .aboutInfo h1 {
-	margin: 0 0 5px;
-	text-decoration: underline;
+  margin: 0 0 5px;
+  text-decoration: underline;
 }
 
 .aboutInfo p {
-	margin: 15px 0;
+  margin: 15px 0;
 }
 
 .aboutInfo .tag-container {
-	background-color: lightgrey;
-	border-radius: 2px;
-	display: inline-block;
-	margin: 0 5px 5px 0;
-	padding: 5px;
+  background-color: lightgrey;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  padding: 5px;
 }
 
 .img-circle {
-	border: 5px solid white;
-	border-radius: 50%;
+  border: 5px solid white;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
-	.aboutInfo {
-		padding: 10px 50px;
-	}
+  .aboutInfo {
+    padding: 10px 50px;
+  }
 
-	.aboutImage {
-		padding: 20px 0;
-	}
+  .aboutImage {
+    padding: 20px 0;
+  }
 
-	.about {
-		padding: 0px;
-	}
+  .about {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 400px) {
-	.img-circle {
-		width: 250px;
-	}
+  .img-circle {
+    width: 250px;
+  }
 }
