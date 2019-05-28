@@ -13,7 +13,7 @@ class Resume extends Component {
             <p>
               <b>Software Engineer (April 2018 - Present)</b>
             </p>
-            <p>Gain Complaince, Des Moines, Iowa</p>
+            <p>Gain Compliance, Des Moines, Iowa</p>
 
             <p>
               <b>Contract Software Developer (September 2017 - March 2018)</b>
