@@ -22,7 +22,7 @@
     "pretty-quick": "2.0.1",
     "react-hot-loader": "4.12.18",
     "sass-loader": "8.0.0",
-    "style-loader": "1.1.0",
+    "style-loader": "1.1.2",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.41.5",
     "webpack-bundle-analyzer": "3.6.0",
