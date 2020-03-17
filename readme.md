@@ -1,6 +1,6 @@
 ## Zach's homepage
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ztoben/react-homepage.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/ztoben/react-homepage.svg?branch=master)](https://travis-ci.org/ztoben/react-homepage)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/97d1cece-6847-446d-a84f-1c8872d3c09d/deploy-status)](https://app.netlify.com/sites/ztoben-react-homepage/deploys)
 
