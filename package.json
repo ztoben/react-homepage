@@ -21,7 +21,7 @@
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "react-hot-loader": "4.12.20",
-    "sass-loader": "8.0.0",
+    "sass-loader": "8.0.2",
     "style-loader": "1.1.2",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.42.0",
