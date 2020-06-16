@@ -96,7 +96,7 @@ module.exports = (env, argv) => {
       ],
       ...(isDev(argv)
         ? [
-            // dev only plugins go here
+            // dev only plugins
             new BundleAnalyzerPlugin(),
             new AssetsPlugin({
               filename: 'assets.json',
@@ -104,7 +104,12 @@ module.exports = (env, argv) => {
             }),
           ]
         : [
-            // prod only plugins go here
+            // prod only plugins
+            new AssetsPlugin({
+              filename: 'assets.json',
+              prettyPrint: true,
+              keepInMemory: true,
+            }),
           ]),
     ],
     devServer: {
