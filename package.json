@@ -4,10 +4,10 @@
   "sideEffects": false,
   "private": true,
   "devDependencies": {
-    "@babel/core": "7.10.2",
+    "@babel/core": "7.10.3",
     "@babel/plugin-proposal-class-properties": "7.10.1",
     "@babel/plugin-transform-modules-commonjs": "7.10.1",
-    "@babel/preset-env": "7.10.2",
+    "@babel/preset-env": "7.10.3",
     "@babel/preset-react": "7.10.1",
     "assets-webpack-plugin": "5.0.2",
     "babel-loader": "8.1.0",
