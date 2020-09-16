@@ -18,7 +18,7 @@
     "mini-css-extract-plugin": "0.11.2",
     "node-sass": "4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.4",
-    "prettier": "2.1.1",
+    "prettier": "2.1.2",
     "pretty-quick": "3.0.2",
     "react-hot-loader": "4.12.21",
     "sass-loader": "10.0.2",
