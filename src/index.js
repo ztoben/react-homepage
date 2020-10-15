@@ -1,23 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import About from './components/About';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './style/Index.scss';
+import App from './components/App';
 
-const navItems = ['About', 'Resume', 'Contact'];
-
-ReactDOM.render(
-  <div>
-    <Header items={navItems} />
-    <About />
-    <Resume />
-    <Contact />
-    <Footer />
-  </div>,
-  document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById('app'));
 
 module.hot.accept();

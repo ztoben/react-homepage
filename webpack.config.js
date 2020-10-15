@@ -1,10 +1,9 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const AssetsPlugin = require('assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 function isDev(argv) {
   return argv.mode === 'development';
@@ -38,49 +37,9 @@ module.exports = (env, argv) => {
       extensions: ['*', '.js', '.jsx'],
     },
     output: {
-      path: __dirname + '/dist',
-      publicPath: '/',
-      filename: 'bundle.js',
-    },
-    optimization: {
-      minimizer: [
-        new UglifyJsPlugin({
-          test: /\.js(\?.*)?$/i,
-          uglifyOptions: {
-            warnings: false,
-            parse: {},
-            compress: {},
-            mangle: true,
-            output: null,
-            toplevel: false,
-            nameCache: null,
-            ie8: false,
-            keep_fnames: false,
-          },
-        }),
-        new OptimizeCSSAssetsPlugin({}),
-      ],
-      splitChunks: {
-        chunks: 'all',
-        minSize: 30000,
-        maxSize: 0,
-        minChunks: 1,
-        maxAsyncRequests: 5,
-        maxInitialRequests: 3,
-        automaticNameDelimiter: '~',
-        name: true,
-        cacheGroups: {
-          vendors: {
-            test: /[\\/]node_modules[\\/]/,
-            priority: -10,
-          },
-          default: {
-            minChunks: 2,
-            priority: -20,
-            reuseExistingChunk: true,
-          },
-        },
-      },
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'js/[name].js?[hash]',
+      chunkFilename: 'js/[name].js?[hash]',
     },
     plugins: [
       ...[
@@ -101,6 +60,8 @@ module.exports = (env, argv) => {
             new AssetsPlugin({
               filename: 'assets.json',
               prettyPrint: true,
+              // keepInMemory: true,
+              removeFullPathAutoPrefix: true,
             }),
           ]
         : [
@@ -108,7 +69,9 @@ module.exports = (env, argv) => {
             new AssetsPlugin({
               filename: 'assets.json',
               prettyPrint: true,
-              keepInMemory: true,
+              fullPath: true,
+              keepInMemory: false,
+              removeFullPathAutoPrefix: true,
             }),
           ]),
     ],
