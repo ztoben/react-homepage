@@ -13,7 +13,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p>Changes!</p>
         <Header items={navItems} />
         <About />
         <Resume />
