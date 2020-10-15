@@ -16,8 +16,14 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.(js|jsx)$/,
+          loader: 'babel-loader',
           exclude: /node_modules/,
-          use: ['babel-loader'],
+          include: /src/,
+        },
+        {
+          test: /\.(js|jsx)$/,
+          use: 'react-hot-loader/webpack',
+          include: /node_modules/,
         },
         {
           test: /\.(scss|css)$/,
@@ -38,8 +44,8 @@ module.exports = (env, argv) => {
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'js/[name].js?[hash]',
-      chunkFilename: 'js/[name].js?[hash]',
+      filename: 'js/[name].js?[fullhash]',
+      chunkFilename: 'js/[name].js?[fullhash]',
     },
     plugins: [
       ...[
