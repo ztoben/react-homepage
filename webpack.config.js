@@ -66,7 +66,7 @@ module.exports = (env, argv) => {
             new AssetsPlugin({
               filename: 'assets.json',
               prettyPrint: true,
-              // keepInMemory: true,
+              keepInMemory: true,
               removeFullPathAutoPrefix: true,
             }),
           ]

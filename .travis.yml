@@ -1,11 +1,11 @@
 language: node_js
 
 node_js:
-  - "11"
+  - '14'
 
 cache:
   directories:
-  - "$HOME/.npm"
+    - '$HOME/.npm'
 
 install:
   - npm install
