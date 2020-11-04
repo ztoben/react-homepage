@@ -9,7 +9,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.12.1",
     "@babel/preset-env": "7.12.1",
     "@babel/preset-react": "7.12.5",
-    "@webpack-cli/serve": "1.0.1",
+    "@webpack-cli/serve": "1.1.0",
     "assets-webpack-plugin": "6.0.3",
     "babel-loader": "8.1.0",
     "css-loader": "5.0.1",
