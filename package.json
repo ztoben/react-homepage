@@ -12,7 +12,7 @@
     "@webpack-cli/serve": "1.5.1",
     "assets-webpack-plugin": "7.1.0",
     "babel-loader": "8.2.2",
-    "css-loader": "5.2.6",
+    "css-loader": "5.2.7",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.3.2",
     "husky": "7.0.1",
